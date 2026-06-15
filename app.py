@@ -5,9 +5,10 @@ import os
 
 load_dotenv()
 
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
-)
+
+api_key = st.secrets.get("GROQ_API_KEY")
+
+client = Groq(api_key=api_key)
 
 st.set_page_config(
     page_title="KB AI Assistant",
