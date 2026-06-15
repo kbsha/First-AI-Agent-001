@@ -1,5 +1,4 @@
 .env
 Old.env
-venv/
 new
 __pycache__/
